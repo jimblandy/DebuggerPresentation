@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg23040"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="snf-14.svg">
+  <defs
+     id="defs23042" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.86548149"
+     inkscape:cx="526.18109"
+     inkscape:cy="372.04724"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="842"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata23045">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.2677)">
+    <g
+       id="g24472"
+       transform="translate(52.937496,-10.887894)">
+      <g
+         id="g24428">
+        <g
+           id="g24385"
+           transform="translate(-130.64941,0)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text23048"
+             y="444.15262"
+             x="130.02289"
+             style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+             xml:space="preserve"><tspan
+               id="tspan23647"
+               y="444.15262"
+               x="130.02289"
+               sodipodi:role="line">var callPlotter = new Debugger(debuggeeGlobal);</tspan><tspan
+               id="tspan23649"
+               y="471.65262"
+               x="130.02289"
+               sodipodi:role="line">var callLog = [];</tspan><tspan
+               id="tspan23651"
+               y="499.15262"
+               x="130.02289"
+               sodipodi:role="line" /><tspan
+               id="tspan23653"
+               y="526.65259"
+               x="130.02289"
+               sodipodi:role="line">function describeCompletion(c) {</tspan><tspan
+               id="tspan23655"
+               y="554.15259"
+               x="130.02289"
+               sodipodi:role="line">    if (!c)</tspan><tspan
+               id="tspan23657"
+               y="581.65259"
+               x="130.02289"
+               sodipodi:role="line">        return &quot;&lt;terminated&gt;&quot;;</tspan><tspan
+               id="tspan23659"
+               y="609.15259"
+               x="130.02289"
+               sodipodi:role="line">    else if (c.return)</tspan><tspan
+               id="tspan23661"
+               y="636.65259"
+               x="130.02289"
+               sodipodi:role="line">        return dvToString(c.return);</tspan><tspan
+               id="tspan23663"
+               y="664.15259"
+               x="130.02289"
+               sodipodi:role="line">    else if (c.throw)</tspan><tspan
+               id="tspan23665"
+               y="691.65259"
+               x="130.02289"
+               sodipodi:role="line">        return &quot;throw: &quot; + dvToString(c.throw);</tspan><tspan
+               id="tspan23667"
+               y="719.15259"
+               x="130.02289"
+               sodipodi:role="line">}</tspan><tspan
+               id="tspan23669"
+               y="746.65259"
+               x="130.02289"
+               sodipodi:role="line" /><tspan
+               id="tspan23685"
+               y="774.15259"
+               x="130.02289"
+               sodipodi:role="line">callPlotter.onEnterFrame = function handleEnter(f) {</tspan><tspan
+               id="tspan24367"
+               y="801.65259"
+               x="130.02289"
+               sodipodi:role="line">    callLog.push({ kind:&quot;push&quot;,</tspan><tspan
+               id="tspan24369"
+               y="829.15259"
+               x="130.02289"
+               sodipodi:role="line">                   code: { type: f.type,</tspan><tspan
+               id="tspan24371"
+               y="856.65259"
+               x="130.02289"
+               sodipodi:role="line">                           description: f.frameDescription()}});</tspan><tspan
+               id="tspan24373"
+               y="884.15259"
+               x="130.02289"
+               sodipodi:role="line">    f.onPop = function handlePop(c) {</tspan><tspan
+               id="tspan24375"
+               y="911.65259"
+               x="130.02289"
+               sodipodi:role="line">        callLog.push({ kind:&quot;pop&quot;, completion: describeCompletion(c) });</tspan><tspan
+               id="tspan24377"
+               y="939.15259"
+               x="130.02289"
+               sodipodi:role="line">    };</tspan><tspan
+               id="tspan24381"
+               y="966.65259"
+               x="130.02289"
+               sodipodi:role="line">};</tspan><tspan
+               id="tspan24235"
+               y="994.15259"
+               x="130.02289"
+               sodipodi:role="line">...</tspan><tspan
+               id="tspan24237"
+               y="1021.6526"
+               x="130.02289"
+               sodipodi:role="line">write(&quot;call-log.js&quot;,</tspan><tspan
+               y="1049.1526"
+               x="130.02289"
+               sodipodi:role="line"
+               id="tspan24426">      &quot;var callLog = \n&quot;, JSON.stringify(callLog, null, 2), &quot;;&quot;);</tspan><tspan
+               id="tspan24239"
+               y="1076.6526"
+               x="130.02289"
+               sodipodi:role="line" /><tspan
+               id="tspan23687"
+               y="1104.1526"
+               x="130.02289"
+               sodipodi:role="line" /></text>
+          <flowRoot
+             transform="translate(25.875004,0)"
+             style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+             id="flowRoot23689"
+             xml:space="preserve"><flowRegion
+               id="flowRegion23691"><rect
+                 style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+                 y="12.709688"
+                 x="243.79494"
+                 height="83.190689"
+                 width="313.12051"
+                 id="rect23693" /></flowRegion><flowPara
+               id="flowPara23695"></flowPara></flowRoot>          <text
+             sodipodi:linespacing="125%"
+             id="text23711"
+             y="345.24133"
+             x="129.30804"
+             style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#bcbcbc;fill-opacity:1;stroke:none;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+             xml:space="preserve"><tspan
+               id="tspan23715"
+               y="345.24133"
+               x="129.30804"
+               sodipodi:role="line">var dbg = new Debugger();</tspan><tspan
+               id="tspan24330"
+               y="372.74133"
+               x="129.30804"
+               sodipodi:role="line">var debuggeeGlobal = newGlobal(&quot;new-compartment&quot;);</tspan><tspan
+               id="tspan23721"
+               y="400.24133"
+               x="129.30804"
+               sodipodi:role="line">dbg.addDebuggee(debuggeeGlobal);</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:-10px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="685.16772"
+           y="207.97672"
+           id="text24420"
+           sodipodi:linespacing="125%"
+           transform="translate(0,308.2677)"><tspan
+             sodipodi:role="line"
+             id="tspan24422"
+             x="685.16772"
+             y="207.97672"></tspan><tspan
+             sodipodi:role="line"
+             id="tspan24424"
+             x="685.16772"
+             y="230.47672" /></text>
+      </g>
+      <text
+         transform="translate(0,308.2677)"
+         sodipodi:linespacing="125%"
+         id="text24468"
+         y="369.73639"
+         x="-36.97364"
+         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:-10px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           id="tspan24470"
+           sodipodi:role="line"
+           x="-36.97364"
+           y="369.73639"></tspan></text>
+    </g>
+  </g>
+</svg>

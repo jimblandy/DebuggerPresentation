@@ -14,7 +14,7 @@
    id="svg7390"
    version="1.1"
    inkscape:version="0.48.1 r9760"
-   sodipodi:docname="New document 49">
+   sodipodi:docname="API.svg">
   <defs
      id="defs7392" />
   <sodipodi:namedview
@@ -37,10 +37,6 @@
      inkscape:window-x="1600"
      inkscape:window-y="0"
      inkscape:window-maximized="1">
-    <sodipodi:guide
-       orientation="1,0"
-       position="530.07143,484.04497"
-       id="guide8401" />
     <sodipodi:guide
        orientation="0,1"
        position="625.19279,741.79316"
@@ -244,10 +240,10 @@
          id="tspan8028" /></text>
     <g
        id="g8285"
-       transform="matrix(1.1093716,0,0,1,-4.4691616,0)">
+       transform="matrix(1.1093716,0,0,1.0502692,-4.4691616,-39.219512)">
       <rect
          rx="5.52109"
-         ry="6.1249404"
+         ry="5.8317814"
          y="780.18951"
          x="40.862171"
          height="198.37988"
